@@ -7,3 +7,35 @@ Date: 2022-10-26
 Github: https://github.com/DomanTom07/
 Licenc: GNU GPL
 */
+html {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+.rhombus {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: yellow;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: red;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+}
+#result {
+    visibility: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: orange;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: blue;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+}
+footer {
+    color: white;
+}

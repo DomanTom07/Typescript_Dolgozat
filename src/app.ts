@@ -9,7 +9,7 @@ Licenc: GNU GPL
 */
 
 const calcButton = document.querySelector('#calcButton');
-const result = document.querySelector('#result');
+const result = document.querySelector('#result') as HTMLElement;
 
 calcButton.addEventListener('click', () => {
     const side = document.querySelector('#side') as HTMLInputElement;
@@ -18,6 +18,7 @@ calcButton.addEventListener('click', () => {
     let angleNum:number = Number(angle.value);
     if (checkErrors(sideNum, angleNum)) {
         let radius = calcRadius(sideNum, angleNum);
+        result.style.visibility = "visible";
         result.textContent = "A beírható kör sugara: " + String(radius);
     }
     side.value = "";

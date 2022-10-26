@@ -16,6 +16,7 @@ calcButton.addEventListener('click', function () {
     var angleNum = Number(angle.value);
     if (checkErrors(sideNum, angleNum)) {
         var radius = calcRadius(sideNum, angleNum);
+        result.style.visibility = "visible";
         result.textContent = "A beírható kör sugara: " + String(radius);
     }
     side.value = "";
